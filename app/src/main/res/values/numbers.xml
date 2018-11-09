@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <integer name="com_vk_sdk_AppId">6746128</integer>
+    <integer name="image_carousel_swap_duration">300</integer>
+    <integer name="card_rotate_duration">500</integer>
+
+    <dimen name="vk_card_view_corner_radius">12dp</dimen>
+</resources>

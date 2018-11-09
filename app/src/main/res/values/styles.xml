@@ -1,11 +1,40 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <attr name="cardViewStyle" format="reference"/>
+    <attr name="imagesCarouselViewStyle" format="reference"/>
+    <attr name="timelineViewStyle" format="reference"/>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="cardViewStyle">@style/CardView</item>
+        <item name="imagesCarouselViewStyle">@style/ImagesCarouselView</item>
+        <item name="timelineViewStyle">@style/TimelineView</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme"/>
+
+    <style name="ActionButton">
+        <item name="android:background">@drawable/bg_action_button</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:translationZ">8dp</item>
+        <!-- Fix buttons visibility -->
+        <item name="android:stateListAnimator">@xml/action_button_animation</item>
+    </style>
+
+    <style name="CardView">
+        <item name="android:elevation">3dp</item>
+        <item name="android:translationZ">5dp</item>
+        <item name="android:background">@drawable/bg_vk_card_view</item>
+    </style>
+
+    <style name="ImagesCarouselView">
+    </style>
+
+    <style name="TimelineView">
+        <item name="activeColor">#FFFFFFFF</item>
+        <item name="inactiveColor">#3DFFFFFF</item>
+        <item name="separatorWidth">2dp</item>
+        <item name="cornerRadius">2dp</item>
     </style>
 
 </resources>

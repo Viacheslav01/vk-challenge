@@ -1,0 +1,42 @@
+
+
+<merge
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/firstImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+
+    <ImageView
+            android:id="@+id/secondImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    />
+
+    <ru.smityukh.vkc.views.imagescarousel.TimelineView
+            android:id="@+id/timelineView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+    />
+
+    <View
+            android:id="@+id/leftClickArea"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+    />
+
+    <View
+            android:id="@+id/rightClickArea"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+    />
+</merge>

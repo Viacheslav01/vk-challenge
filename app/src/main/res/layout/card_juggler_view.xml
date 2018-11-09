@@ -1,0 +1,73 @@
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ru.smityukh.vkc.views.cardview.CardView
+            android:id="@+id/secondCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="96dp"
+    />
+
+    <ru.smityukh.vkc.views.cardview.CardView
+            android:id="@+id/firstCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="96dp"
+    />
+
+    <!-- Unable to reuse one instance in case of full relayout to reflect shorter text -->
+    <FrameLayout
+            android:id="@+id/actionLabelLike"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginTop="44dp"
+            android:layout_gravity="top|center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="13dp"
+            android:elevation="12dp"
+            android:background="@drawable/bg_action_label_like">
+        <TextView
+                android:id="@+id/actionLabelLikeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@string/font_family_medium"
+                android:text="@string/action_label_like"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:id="@+id/actionLabelSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginTop="44dp"
+            android:layout_gravity="top|center_horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="13dp"
+            android:elevation="12dp"
+            android:background="@drawable/bg_action_label_skip">
+        <TextView
+                android:id="@+id/actionLabelSkipText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@string/font_family_medium"
+                android:text="@string/action_label_skip"/>
+    </FrameLayout>
+
+</FrameLayout>

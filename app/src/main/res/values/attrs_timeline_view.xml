@@ -1,0 +1,10 @@
+
+
+<resources>
+    <declare-styleable name="TimelineView">
+        <attr name="activeColor" format="color"/>
+        <attr name="inactiveColor" format="color"/>
+        <attr name="separatorWidth" format="dimension"/>
+        <attr name="cornerRadius" format="dimension"/>
+    </declare-styleable>
+</resources>

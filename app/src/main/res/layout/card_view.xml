@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:layout_height="match_parent"
+              android:orientation="vertical" android:paddingBottom="5dp">
+
+    <FrameLayout android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView
+                android:id="@+id/userAvatarView"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_avatar"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/userNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:lineHeight="16sp"
+                    android:textColor="#2C2D2E"
+                    android:fontFamily="@string/font_family_medium"
+                    android:singleLine="true"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            <TextView
+                    android:id="@+id/postTimestampView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:textColor="#818C99"
+                    android:fontFamily="@string/font_family_regular"
+                    android:textSize="12sp" android:lineHeight="14sp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <ru.smityukh.vkc.views.imagescarousel.ImagesCarouselView
+            android:id="@+id/imagesCarouselView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginLeft="1px" android:layout_marginRight="1px"/>
+
+    <TextView
+            android:layout_weight="1"
+            android:id="@+id/descriptionTextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="8dp"
+            android:textSize="15sp"
+            android:fontFamily="@string/font_family_regular"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:ellipsize="end"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="5dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ЕЩЁ"
+                android:textSize="13sp"
+                android:fontFamily="@string/font_family_regular"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dropdown_16"
+                android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</LinearLayout>
